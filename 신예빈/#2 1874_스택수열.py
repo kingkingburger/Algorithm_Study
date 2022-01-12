@@ -2,7 +2,7 @@ import sys
 
 testCase = int(sys.stdin.readline())
 
-sequence = [i+1 for i in range(testCase)]   # 0부터 testcase까지의 수열 리스트
+sequence = [i+1 for i in range(testCase)]   # 1부터 testcase까지의 수열 리스트
 stack = []                                  
 operation = []                              # 기호 저장 리스트
 

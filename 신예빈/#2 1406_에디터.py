@@ -1,6 +1,7 @@
+from abc import abstractmethod
 import sys
 
-# #cursor를 숫자로 표현  문자가 abcd면 0 a 1 b 2 c 3 d 4  
+# cursor를 숫자로 표현  문자가 abcd면 0 a 1 b 2 c 3 d 4  
 
 # st = list(sys.stdin.readline().rstrip())
 # cursor = len(st)
@@ -34,6 +35,7 @@ st2 = []
 
 for _ in range(int(sys.stdin.readline())):
     case = list(sys.stdin.readline().split())
+
     if case[0] == "L": 
         if st:
             st2.append(st.pop())
