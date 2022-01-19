@@ -4,7 +4,7 @@ input = sys.stdin.readline
 s = input().rstrip()
 tag = False
 word = ""
-answer = ""
+result = ""
 
 for i in s:
     if tag == False:
@@ -13,7 +13,7 @@ for i in s:
             word += i
         elif i == " ":
             word += i
-            answer += word
+            result += word
             word = ""
         else:
             word = i + word
@@ -22,7 +22,7 @@ for i in s:
         word += i
         if i == ">":
             tag = False
-            answer += word
+            result += word
             word = ""
 
-print(answer + word)
+print(result + word)
