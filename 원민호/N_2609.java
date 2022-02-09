@@ -18,22 +18,16 @@ public class N_2609 {
             num2 = temp;
         }
 
+        //최대공약수 - 유클리드 호제법(num2의 나머지가 0보다 크면 나머지를 나누기)
+        //1. a = 10, b = 8, 나머지 2 => a = 8, b = 2
+        //2. a = 8, b = 2, 나머지 0 => a = 2, b = 0
         //최대공약수
         for(int i = num1; i > 0; i--){
             if((num1 % i) == 0 && (num2 % i) == 0 ){
                 System.out.println(i);
+                System.out.println(result / i);
                 break;
             }
-        }
-
-        //최소공배수
-        int bigger = num1;
-        while(true){
-            if((bigger % num1 == 0) && (bigger % num2 == 0)){
-                System.out.println(bigger);
-                return;
-            }
-            bigger++;
         }
 
     }
